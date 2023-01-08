@@ -1,10 +1,10 @@
-import { Button, Link, useTheme, Hidden, IconButton, Stack, Container } from "@mui/material";
-import Image from "next/image";
-import logo from "../../assets/images/My project.png";
+import { Link, useTheme, Hidden, IconButton, Stack, Container } from "@mui/material";
 import HeaderHambergerBody from "./HeaderHambergerBody";
+import RouterLink from "next/link";
 import { useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import MyButton from "../common/MyButton";
+import Logo from "../common/Logo";
 
 const HeaderMain = ({ hideness }) => {
   const theme = useTheme();
@@ -23,31 +23,15 @@ const HeaderMain = ({ hideness }) => {
         backgroundColor: hideness ? theme.palette.primary.main : "transparent",
         boxShadow: hideness ? 2 : 15,
         py: 1,
-        
       }}
     >
-      <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <Stack direction="row" alignItems="center" paddingY={1}>
-          <Image src={logo} alt="logo" height="60" width="60" />
-          <Link
-            href="#"
-            underline="none"
-            color={theme.palette.textColorForBgSecondary.lightWhite}
-            sx={{
-              cursor: "pointer",
-              fontSize: "35px",
-              fontWeight: 700,
-              transition: ".4s",
-              ":hover": { color: theme.palette.textColorForBgSecondary.main },
-            }}
-          >
-            Biswas
-          </Link>
-        </Stack>
+      <Stack direction="row" justifyContent="space-between" alignItems="center" paddingY={1}>
+        <Logo />
         <Hidden mdDown>
           <Stack direction="row" spacing={{ lg: 8, md: 2 }} justifyContent="center" alignItems="center" paddingY={1}>
             <Link
-              href="#"
+              href="/"
+              component={RouterLink}
               underline="none"
               color={theme.palette.textColorForBgSecondary.lightWhite}
               sx={{
