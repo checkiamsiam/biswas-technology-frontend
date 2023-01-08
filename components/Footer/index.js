@@ -1,4 +1,4 @@
-import { Container, Grid, Stack, useTheme, Link, Typography, Box } from "@mui/material";
+import { Container, Grid,  Box } from "@mui/material";
 import style from "../../styles/home.module.css";
 import FooterSubtitle from "./FooterSubtitle";
 import FooterIntro from "./FooterIntro";
@@ -7,7 +7,6 @@ import FooterSolutions from "./FooterSolutions";
 import FooterResources from "./FooterResources";
 
 const Footer = () => {
-  const theme = useTheme();
   return (
     <Box className={style.setBgInFooter} sx={{ mt: 6 }}>
       <Container maxWidth="xl">

@@ -1,9 +1,3 @@
-.setBg {
-  background-image: url("../assets/images/paul-volkmer-fX-qWsXl5x8-unsplash-compressed.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 .setBgInContact {
   background-image: url("../assets/images/contact.jpg");
@@ -12,15 +6,16 @@
   background-position: center;
 }
 
-.setBgInReview{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.89) , rgba(0 ,0, 0, 0.815) ) , url("../assets/images/happyclient.jpg");
+.setBgInReview {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.815)), url("../assets/images/happyclient.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.setBgInFooter{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.89) , rgba(0 ,0, 0, 0.815) ) , url("../assets/images/footer-bg.jpg");
+.setBgInFooter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.815)), url("../assets/images/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+

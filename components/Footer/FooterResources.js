@@ -5,7 +5,7 @@ function FooterResources() {
   const theme = useTheme();
   return (
     <Box>
-      <Typography color={theme.palette.textColorForBgSecondary.lightWhite} s sx={{ fontSize: "20px", fontWeight: 500, marginBottom: 1 }}>
+      <Typography color={theme.palette.textColorForBgSecondary.lightWhite} sx={{ fontSize: "20px", fontWeight: 500, marginBottom: 1 }}>
         Resources
       </Typography>
       <hr />
