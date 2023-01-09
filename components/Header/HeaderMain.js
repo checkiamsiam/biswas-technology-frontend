@@ -47,6 +47,7 @@ const HeaderMain = ({ hideness }) => {
             <Link
               href="#"
               underline="none"
+              component={RouterLink}
               color={theme.palette.textColorForBgSecondary.lightWhite}
               sx={{
                 cursor: "pointer",
@@ -65,6 +66,7 @@ const HeaderMain = ({ hideness }) => {
             <Link
               href="#"
               underline="none"
+              component={RouterLink}
               color={theme.palette.textColorForBgSecondary.lightWhite}
               sx={{
                 cursor: "pointer",
@@ -79,6 +81,7 @@ const HeaderMain = ({ hideness }) => {
             <Link
               href="#"
               underline="none"
+              component={RouterLink}
               color={theme.palette.textColorForBgSecondary.lightWhite}
               sx={{
                 cursor: "pointer",
@@ -93,6 +96,7 @@ const HeaderMain = ({ hideness }) => {
             <Link
               href="#"
               underline="none"
+              component={RouterLink}
               color={theme.palette.textColorForBgSecondary.lightWhite}
               sx={{
                 cursor: "pointer",

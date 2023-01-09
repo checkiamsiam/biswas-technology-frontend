@@ -2,9 +2,9 @@ import { Container, Grid, Box } from "@mui/material";
 import style from "../../styles/home.module.css";
 import FooterSubtitle from "./FooterSubtitle";
 import FooterIntro from "./FooterIntro";
-import FooterAdress from "./FooterAdress";
-import FooterSolutions from "./FooterSolutions";
-import FooterResources from "./FooterResources";
+import FooterContactUs from "./FooterContactUs";
+import FooterInformation from "./FooterInformation";
+import FooterClientServices from "./FooterClientServices";
 
 const Footer = () => {
   return (
@@ -15,13 +15,13 @@ const Footer = () => {
             <FooterIntro />
           </Grid>
           <Grid item lg={3} md={6} xs={12} width={{ lg: "25%", md: "50%", xs: "100%" }}>
-            <FooterAdress />
+            <FooterContactUs />
           </Grid>
           <Grid item lg={3} md={6} xs={12} width={{ lg: "25%", md: "50%", xs: "100%" }}>
-            <FooterSolutions />
+            <FooterInformation />
           </Grid>
           <Grid item lg={3} md={6} xs={12} width={{ lg: "25%", md: "50%", xs: "100%" }}>
-            <FooterResources />
+            <FooterClientServices />
           </Grid>
         </Grid>
       </Container>

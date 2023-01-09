@@ -8,8 +8,7 @@ function FooterIntro() {
     <Box>
       <Logo />
       <Typography color={theme.palette.textColorForBgSecondary.main} marginY={1}>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vitae ullam aliquam velit optio similique illum nisi obcaecati nesciunt, fugit
-        quidem dolores, animi dolor at illo. Saepe iste sint ad?
+        Biswas tech is a web design and development service providing software company. We also work on mobile application development and auto cad services.
       </Typography>
       <Stack direction="row" spacing={2} alignItems="center" paddingY={1}>
         <Link
