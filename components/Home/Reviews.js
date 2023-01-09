@@ -6,17 +6,10 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import ReviewsIcon from "@mui/icons-material/Reviews";
 import Carousel from "react-material-ui-carousel";
+import { reviewsData } from "../../utils/fakeData/reviewData";
 
 const Reviews = () => {
   const theme = useTheme();
-  var items = [
-    {
-      name: "Siam Ahemd",
-    },
-    {
-      name: "Angelina Angel",
-    },
-  ];
   return (
     <Container
       maxWidth="xl"
@@ -27,7 +20,7 @@ const Reviews = () => {
       }}
     >
       <Typography textAlign="center" color={theme.palette.textColorForBgSecondary.main} fontWeight="700" fontSize="15px">
-        Honest Reviews
+        Testimonials
       </Typography>
       <Typography textAlign="center" color={theme.palette.textColorForBgSecondary.main} fontWeight="700" fontSize={{ md: "40px", xs: "25px" }}>
         See What Our Clients Says
@@ -38,9 +31,7 @@ const Reviews = () => {
           NextIcon={<KeyboardDoubleArrowRightIcon sx={{ color: theme.palette.secondary.main, fontSize: "30px" }} />}
           PrevIcon={<KeyboardDoubleArrowLeftIcon sx={{ color: theme.palette.secondary.main, fontSize: "30px" }} />}
         >
-          {items.map((item, i) => (
-            <SliderItem key={i} name={item} />
-          ))}
+          {reviewsData && reviewsData.map((item, i) => <SliderItem key={i} item={item} />)}
         </Carousel>
       </Stack>
     </Container>
@@ -49,7 +40,7 @@ const Reviews = () => {
 
 export default Reviews;
 
-function SliderItem({ name }) {
+function SliderItem({ item }) {
   const theme = useTheme();
   return (
     <Box sx={{ minHeight: "400px", px: { md: 12, xs: 0 }, py: { md: 6, xs: 3 } }}>
@@ -57,17 +48,16 @@ function SliderItem({ name }) {
         <ReviewsIcon sx={{ fontSize: "100px", color: theme.palette.secondary.main }} />
       </Stack>
       <Typography textAlign="center" color={theme.palette.textColorForBgSecondary.main} fontWeight="500" fontSize="20px" marginTop={{ md: 2, xs: 1 }}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio excepturi atque consectetur accusantium ipsum explicabo repellendus ipsa
-        assumenda quibusdam, voluptatibus odio laborum eaque nemo. Tempora!
+        {item.message}
       </Typography>
       <Stack direction="row" justifyContent="center" marginTop={{ md: 2, xs: 1 }}>
-        <Rating name="read-only" value={5} readOnly sx={{ color: theme.palette.secondary.main }} />
+        <Rating name="read-only" value={item.rating} readOnly sx={{ color: theme.palette.secondary.main }} />
       </Stack>
       <Typography textAlign="center" color={theme.palette.textColorForBgSecondary.main} fontWeight="700" fontSize="25px" marginTop={{ md: 2, xs: 1 }}>
-        {name.name}
+        {item.name}
       </Typography>
       <Typography textAlign="center" color={theme.palette.textColorForBgSecondary.lightWhite} fontWeight="700" fontSize="15px">
-        Jatrabari , Dhaka
+        {item.location}
       </Typography>
     </Box>
   );
