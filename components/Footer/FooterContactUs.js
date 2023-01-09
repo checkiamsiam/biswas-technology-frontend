@@ -3,12 +3,12 @@ import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import MailIcon from "@mui/icons-material/Mail";
 
-function FooterAdress() {
+function FooterContactUs() {
   const theme = useTheme();
   return (
     <Box>
       <Typography color={theme.palette.textColorForBgSecondary.lightWhite} sx={{ fontSize: "20px", fontWeight: 500, marginBottom: 1 }}>
-        Address
+        Contact Us
       </Typography>
       <hr />
       <Grid container sx={{ marginTop: 3 }} rowGap={2}>
@@ -51,4 +51,4 @@ function FooterAdress() {
   );
 }
 
-export default FooterAdress;
+export default FooterContactUs;
