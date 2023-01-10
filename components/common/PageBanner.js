@@ -8,7 +8,7 @@ const PageBanner = ({ title, path }) => {
   return (
     <ParticlesWrapper>
       <Container maxWidth="xl">
-        <Stack direction="row" justifyContent="center" alignItems="center" minHeight="80vh">
+        <Stack direction="row" justifyContent="center" alignItems="center" minHeight="90vh">
           <Stack width={{ lg: "50%", xs: "100%" }}>
             <Typography textAlign="center" color={theme.palette.textColorForBgSecondary.main} fontWeight="800" fontSize={{ md: "50px", xs: "35px" }}>
               {title}
