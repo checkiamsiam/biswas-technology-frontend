@@ -45,7 +45,7 @@ const HeaderMain = ({ hideness }) => {
               Home
             </Link>
             <Link
-              href="#"
+              href="/about"
               underline="none"
               component={RouterLink}
               color={theme.palette.textColorForBgSecondary.lightWhite}
