@@ -8,7 +8,7 @@ import autoCadIcon from "../../assets/images/architecture.png";
 const Services = () => {
   const theme = useTheme();
   return (
-    <Container maxWidth="xl" sx={{ position: "relative" , marginTop: 5 , marginTop: "-100px" }}>
+    <Container maxWidth="xl" sx={{ position: "relative", my: 5, marginTop: "-100px" }}>
       <Grid container spacing={2}>
         <Grid item lg={3} md={6} xs={12}>
           <Box
