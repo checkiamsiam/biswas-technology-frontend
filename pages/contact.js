@@ -1,5 +1,6 @@
 import Head from "next/head";
 import PageBanner from "../components/common/PageBanner";
+import ContactCards from "../components/Contact/ContactCards";
 import HomeContact from "../components/Home/HomeContact";
 
 export default function ContactPage() {
@@ -11,6 +12,7 @@ export default function ContactPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <PageBanner title="Contact Us" path="Contact" />
+      <ContactCards/>
       <HomeContact />
     </>
   );

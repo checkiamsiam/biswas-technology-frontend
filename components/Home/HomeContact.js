@@ -19,7 +19,7 @@ const HomeContact = () => {
             Get In Touch
           </Typography>
           <Typography textAlign="center" color={theme.palette.textColorForBgSecondary.main} fontWeight="700" fontSize={{ md: "40px", xs: "25px" }}>
-            Get Connected With us for any Queries
+            Direct Message us for any Queries
           </Typography>
           </Stack>
           <form>
