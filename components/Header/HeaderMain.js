@@ -79,7 +79,7 @@ const HeaderMain = ({ hideness }) => {
               Services
             </Link>
             <Link
-              href="#"
+              href="/community"
               underline="none"
               component={RouterLink}
               color={theme.palette.textColorForBgSecondary.lightWhite}
@@ -94,7 +94,7 @@ const HeaderMain = ({ hideness }) => {
               Community
             </Link>
             <Link
-              href="#"
+              href="/contact"
               underline="none"
               component={RouterLink}
               color={theme.palette.textColorForBgSecondary.lightWhite}
