@@ -1,7 +1,6 @@
 import Head from "next/head";
 import PageBanner from "../components/common/PageBanner";
-import OurApproach from "../components/Home/OurApproach";
-import Services from "../components/Home/Services";
+import OurTeam from "../components/Community/OurTeam";
 
 export default function CommunityPage() {
   return (
@@ -12,6 +11,7 @@ export default function CommunityPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <PageBanner title="Our Team" path="Community" />
+      <OurTeam/>
     </>
   );
 }
