@@ -1,0 +1,12 @@
+.memberCardSocialItems,
+.memberCardBox {
+  transition: 0.7s;
+}
+
+.memberCard:hover .memberCardSocialItems {
+  margin-top: 15px;
+  opacity: 1;
+}
+.memberCard:hover .memberCardBox {
+  background-color: #e21f36;
+}
