@@ -1,11 +1,5 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const connectDB = (handler) => async (req, res) => {
-  if (mongoose.connections[0].readyState) {
-    return handler(req, res);
-  }
-  await mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
-  return handler(req, res);
-};
+const connectMongo = async () =>  mongoose.connect(process.env.MONGO_URI);
 
-export default connectDB;
+export default connectMongo;
