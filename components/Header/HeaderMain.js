@@ -112,7 +112,7 @@ const HeaderMain = ({ hideness }) => {
         </Hidden>
         <Hidden mdDown>
           <Stack>
-            <MyButton>Get Us</MyButton>
+            <MyButton>Join Us</MyButton>
           </Stack>
         </Hidden>
         <Hidden mdUp>
