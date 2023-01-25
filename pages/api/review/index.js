@@ -1,6 +1,5 @@
-import mongoose from "mongoose";
 import connectMongo from "../../../utils/dbConnect";
-const Reviews = mongoose.model("Review");
+import Reviews from "../../../models/reviewModel";
 
 export default async function reviewsController(req, res) {
   try {
@@ -15,8 +14,8 @@ export default async function reviewsController(req, res) {
       if (isReviewed) {
         res.status(400).json({ success: false, message: "already reviewed" });
       } else {
-        const newAddedJob = await review.save();
-        res.status(200).json(newAddedJob);
+        const newAddedReview = await review.save();
+        res.status(200).json(newAddedReview);
       }
     }
   } catch (error) {
